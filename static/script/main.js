@@ -27273,8 +27273,8 @@ and limitations under the License.
             e.appendChild(i),
             e.appendChild(o),
             e.appendChild(a),
-            r.setAttribute("src", "images/icon-quantity-add.svg"),
-            s.setAttribute("src", "images/icon-quantity-minus.svg"),
+            r.setAttribute("src", "static/images/icon-quantity-add.svg"),
+            s.setAttribute("src", "static/images/icon-quantity-minus.svg"),
             n.appendChild(r),
             i.appendChild(s),
             o.innerHTML = d,
@@ -28189,11 +28189,12 @@ and limitations under the License.
             "/" === window.location.pathname && (window.location = "/")
         }
         setId(t) {
-            this.currentURL = "/Song-Maker/song/".concat(t),
+            this.currentURL = "/song/".concat(t),
+            console.log("this.currentURL: ", this.currentURL);
             window.history.pushState({}, "Song ".concat(t), this.currentURL)
         }
         clear() {
-            this.currentURL = "/Song-Maker/",
+            this.currentURL = "/",
             window.history.pushState({}, "Song Maker", this.currentURL)
         }
     }
@@ -28627,7 +28628,7 @@ and limitations under the License.
                 n.id = "edit-link",
                 n.textContent = "Edit with Song Maker",
                 n.setAttribute("target", "_blank"),
-                n.setAttribute("href", "/Song-Maker/song/" + t),
+                n.setAttribute("href", "/song/" + t),
                 document.body.appendChild(n)
             }
         }
@@ -28637,7 +28638,7 @@ and limitations under the License.
                 var e = new FormData;
                 e.append("midi", t.midiData.encode(t.options)),
                 e.append("data", JSON.stringify(t.options.toJSON()));
-                var n = yield fetch("/Song-Maker/save", {
+                var n = yield fetch("/save", {
                     method: "POST",
                     body: e
                 }).then(e=>{
@@ -28660,16 +28661,16 @@ and limitations under the License.
                 var n = fetch("https://storage.googleapis.com/song-maker-midifiles-prod/".concat(t, ".mid")).then(e=>{
                     if (e.ok)
                         return e.arrayBuffer();
-                    throw window.location = "/Song-Maker/",
+                    throw window.location = "/",
                     new Error("could not load midi file ".concat(t))
                 }
                 )
-                  , i = fetch("".concat("/Song-Maker/data", "/").concat(t), {
+                  , i = fetch("".concat("/data", "/").concat(t), {
                     method: "POST"
                 }).then(e=>{
                     if (e.ok)
                         return e.json();
-                    throw window.location = "/Song-Maker/",
+                    throw window.location = "/",
                     new Error("could not load data file ".concat(t))
                 }
                 )
