@@ -1806,7 +1806,9 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         ,
         o.Tween = function(t, e) {
-            this._object = t,
+            console.log("Tween");
+            console.log("t: ", t);
+           this._object = t,
             this._valuesStart = {},
             this._valuesEnd = {},
             this._valuesStartRepeat = {},
@@ -1827,6 +1829,8 @@ document.addEventListener('DOMContentLoaded', function () {
             this._onCompleteCallback = null,
             this._onStopCallback = null,
             this._group = e || o,
+            console.log("e || o: ", e || o);
+            console.log("o: ", o);
             this._id = o.nextId()
         }
         ,
@@ -14839,6 +14843,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 }
 , function(t, e, n) {
+    console.log("t: ", typeof(t));
+    var t_json = JSON.stringify(t, null, 4);
+    console.log("t: ", t_json);
     (e = n(24)(!1)).push([t.i, "@keyframes dash{0%{stroke-dashoffset:120}50%{stroke-dashoffset:30;transform:rotate(240deg)}100%{stroke-dashoffset:120;transform:rotate(720deg)}}#grid-container{height:calc(100% - 190px);width:100%;position:absolute;top:81px;overflow:hidden;background-color:#fff}@media(max-width: 767px){#grid-container{height:calc(100% - 140px);top:60px}}@media(max-width: 495px){#grid-container{height:calc(100% - 185px)}}#instrument-canvas{position:absolute;top:0;left:0}#percussion-canvas{position:absolute;bottom:0;left:0}#canvas-container{height:calc(100% - 190px);width:100%;position:absolute;top:81px;overflow:auto;background-color:#fff}#canvas-container.zoomed #scroll-container{height:100% !important}#canvas-container.zoomed #record-indicator{opacity:.2}@media(max-width: 767px){#canvas-container{top:60px;height:calc(100% - 140px)}}@media(max-width: 495px){#canvas-container{height:calc(100% - 185px)}}#canvas-container #record-indicator{position:absolute;top:0px;left:0px;width:100%;height:100%;background-color:red;pointer-events:none;z-index:10;opacity:0}#canvas-container #scroll-container{position:absolute;top:0px;left:0px;width:100%;height:100%;cursor:pointer}#canvas-container #scroll-container canvas{position:absolute;top:0px;left:0px;width:100%;height:100%}#canvas-container #scroll-container #instrument{position:absolute;top:0px;left:0px;width:100%;height:100%;height:100%}#canvas-container #scroll-container #percussion{border-top:1px solid #f5f5f5;position:absolute;top:0px;left:0px;width:100%;height:100%;min-height:60px;max-height:90px;height:15%;top:calc(100% - 60px);background-color:#fff;box-sizing:border-box}#canvas-container #scroll-container .touch-grid{position:absolute;top:0px;left:0px;width:100%;height:100%}#canvas-container #scroll-container #indicator{pointer-events:none}", ""]),
     e.locals = {
         blue: "#16a8f0",
@@ -25149,7 +25156,11 @@ and limitations under the License.
             this.part = new Ie(this.onnote.bind(this)).start(0),
             this.hotMic = !1,
             this.track = e,
-            r || (this.track.on("add", t=>this.addNote(t)),
+            console.log("Constructor");
+            r || (this.track.on("add", t=>{
+                console.log("Constructor t: ", t);
+                this.addNoteVN(t);
+            }),
             this.track.on("remove", t=>this.removeNote(t)),
             this.track.on("touch", t=>{
                 isNaN(t.pitch) || this.hotMic || (e.getEvent(t.time, t.pitch) ? this.playNote(t.pitch) : this.playNote(t.pitch, .15, void 0, n ? "soften" : .1))
@@ -25157,7 +25168,8 @@ and limitations under the License.
             )),
             this.instrument = new fn(t,n,i,r)
         }
-        addNote(t) {
+        addNoteVN(t) {
+            console.log("addNote this.part: ", t);
             this.part.add(t.time * _t("4n") / this.options.subdivision, t),
             t.envelope = 0
         }
@@ -25189,7 +25201,10 @@ and limitations under the License.
         }
         syncWithMidiTrack() {
             this.clear(),
-            this.track.forEach(t=>this.addNote(t))
+            this.track.forEach(t=>{
+            console.log("syncWithMidiTrack: ", t);
+            this.addNoteVN(t);
+            })
         }
         playNote(t) {
             var e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : _t("4n") / this.options.subdivision
@@ -25516,6 +25531,8 @@ and limitations under the License.
             return this.midiTrack.has(t.x, e)
         }
         addNote(t) {
+            console.log("addNote: ", t);
+            console.log("addNote typeof: ", typeof(t) );
             try {
                 var e = this.indexToPitch(t.y)
                   , n = this.midiTrack.add(t.x, e);
@@ -25576,6 +25593,7 @@ and limitations under the License.
             )
         }
         select(t) {
+            console.log("select(t)");
             this.midiTrack.emit("touch", {
                 time: t.x,
                 pitch: this.indexToPitch(t.y)
@@ -25583,6 +25601,7 @@ and limitations under the License.
             this.selection = t
         }
         animateNotes(t) {
+            console.log("animateNotes(t)", t);
             t < 0 || void 0 !== this.beatsState[t] && (this.beatsState[t].on = 1,
             new gn.a.Tween(this.beatsState[t]).to({
                 on: 0
@@ -26457,152 +26476,13 @@ and limitations under the License.
             t.targetTouches.length > 1 || this.up("touch")
         }
     }
-    class ei extends i.EventEmitter {
-        constructor() {
-            var t;
-            super(),
-            t = this,
-            this.instruments = [],
-            this.offsets = [],
-            this.touches = [],
-            this.defaultInstrumentIndex = 0,
-            this.selector = new Kn,
-            this.selector.on("start", t=>this.onInteractionStart()),
-            this.selector.on("change", t=>this.onSelectorChange(t)),
-            this.selector.on("outofbounds", ()=>this.onSelectorOutOfBounds()),
-            this.selector.on("add", t=>this.onAddNote(t)),
-            this.selector.on("toggle", t=>this.onSelectorToggle(t)),
-            this.selector.on("delete", (function(e) {
-                var n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-                t.onSelectorDelete(e, n)
-            }
-            ))
-        }
-        computeOffsets() {
-            this.offsets = [],
-            this.instruments.forEach((t,e)=>{
-                this.offsets[e] = (this.instruments[e - 1] ? this.instruments[e - 1].rows : 0) + (this.offsets[e - 1] ? this.offsets[e - 1] : 0),
-                this.touches[e].offsetY = this.offsets[e]
-            }
-            )
-        }
-        updateSelector() {
-            var t = this.instruments.reduce((t,e)=>t + e.rows, 0);
-            this.selector.update({
-                defaultY: this.offsets[this.defaultInstrumentIndex],
-                rows: t,
-                cols: this.instruments[0] ? this.instruments[0].cols : 0
-            })
-        }
-        update() {
-            this.computeOffsets(),
-            this.updateSelector()
-        }
-        registerInstrument(t) {
-            var e = this
-              , n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-            this.instruments.push(t),
-            t.on("reset", ()=>this.update()),
-            n && (this.defaultInstrumentIndex = this.instruments.length - 1);
-            var i = new ti(t);
-            i.on("testPosition", (function() {
-                return e.onTestPosition(...arguments)
-            }
-            )),
-            i.on("pointerdown", (function() {
-                return e.onInteractionStart(...arguments)
-            }
-            )),
-            i.on("add", (function() {
-                return e.onAddNote(...arguments)
-            }
-            )),
-            i.on("remove", (function() {
-                return e.onRemoveNote(...arguments)
-            }
-            )),
-            this.touches.push(i),
-            this.update()
-        }
-        indexToInstrument(t) {
-            for (var e = 0, n = this.offsets.length - 1; n >= 0; n--)
-                if (this.offsets[n] <= t.y) {
-                    e = n;
-                    break
-                }
-            return {
-                instrument: this.instruments[e],
-                pos: {
-                    x: t.x,
-                    y: t.y - this.offsets[e]
-                }
-            }
-        }
-        onInteractionStart() {
-            r.emit("history:push", {
-                type: "start"
-            })
-        }
-        onSelectorOutOfBounds() {
-            this.emit("outofbounds")
-        }
-        onSelectorChange(t) {
-            var e = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1]
-              , {instrument: n, pos: i} = this.indexToInstrument(t)
-              , r = [];
-            this.instruments.forEach(t=>{
-                var e = {
-                    x: i.x,
-                    y: t === n ? i.y : -1
-                };
-                t.select(e),
-                r.push({
-                    instrument: t,
-                    position: e
-                })
-            }
-            ),
-            e && this.emit("select", r)
-        }
-        onSelectorToggle(t) {
-            var {instrument: e, pos: n} = this.indexToInstrument(t);
-            e.has(n) ? this.onRemoveNote(t) : this.onAddNote(t)
-        }
-        onSelectorDelete(t) {
-            for (var e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, n = 0; n < this.selector.rows; n++)
-                this.onRemoveNote({
-                    x: t.x,
-                    y: n
-                }, e)
-        }
-        onTestPosition(t, e) {
-            var {instrument: n, pos: i} = this.indexToInstrument(t);
-            e(n.has(i)),
-            this.selector.hide()
-        }
-        onAddNote(t) {
-            var {instrument: e, pos: n} = this.indexToInstrument(t);
-            e.addNote(n) && this.emit("song-changed")
-        }
-        onRemoveNote(t) {
-            var e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
-              , {instrument: n, pos: i} = this.indexToInstrument(t);
-            n.removeNote(i) && (e && e.isDeleteKey && this.emit("play-delete-sound"),
-            this.emit("song-changed"))
-        }
-        selectDefaultInstrument(t) {
-            try {
-                var e = this.instruments[this.defaultInstrumentIndex].pitchToIndex(t)
-                  , n = e + this.offsets[this.defaultInstrumentIndex];
-                return this.selector.set({
-                    y: n
-                }),
-                e
-            } catch (t) {
-                return NaN
-            }
-        }
-    }
+
+
+
+
+
+
+
     var ni = n(31)
       , ii = n.n(ni);
     class ri extends i.EventEmitter {
@@ -27890,6 +27770,8 @@ and limitations under the License.
             this.close()
         }
     }
+
+
     class Hi extends i.EventEmitter {
         constructor() {
             var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : document.body
@@ -28166,6 +28048,8 @@ and limitations under the License.
             this.midiModal(t)
         }
     }
+
+
     class Wi extends i.EventEmitter {
         constructor() {
             super(),
@@ -28370,11 +28254,8 @@ and limitations under the License.
         er.loading && er.loading.close("grid")
     }
     );
-    var rr = new ei;
-    function sr() {
-        hr.songChanged = !0,
-        tr.instrument.timeline._length + tr.percussion.timeline._length < 1 ? hr.disableSaveButton(!0) : hr.disableSaveButton(!1)
-    }
+
+
     function or(t) {
         var e = arguments.length > 1 && void 0 !== arguments[1] && arguments[1]
           , n = Ki.toJSON();
@@ -28389,6 +28270,186 @@ and limitations under the License.
         nr.syncWithMidiTrack(),
         dr.clear()
     }
+
+    class ei extends i.EventEmitter {
+        constructor() {
+//            var cell = {x:3, y:4};
+////            this.onAddNote(cell);
+//            console.log("constructor   ei");
+            var t;
+            super(),
+            t = this,
+            this.instruments = [],
+            this.offsets = [],
+            this.touches = [],
+            this.defaultInstrumentIndex = 0,
+            this.selector = new Kn,
+            this.selector.on("start", t=>this.onInteractionStart()),
+            this.selector.on("change", t=>this.onSelectorChange(t)),
+            this.selector.on("outofbounds", ()=>this.onSelectorOutOfBounds()),
+            this.selector.on("add", t=>{
+                console.log("selector  t: ",t);
+                this.onAddNote(t)
+           }),
+            this.selector.on("toggle", t=>this.onSelectorToggle(t)),
+            this.selector.on("delete", (function(e) {
+                var n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
+                t.onSelectorDelete(e, n)
+            }
+            ))
+        }
+
+        computeOffsets() {
+            this.offsets = [],
+            this.instruments.forEach((t,e)=>{
+                this.offsets[e] = (this.instruments[e - 1] ? this.instruments[e - 1].rows : 0) + (this.offsets[e - 1] ? this.offsets[e - 1] : 0),
+                this.touches[e].offsetY = this.offsets[e]
+            }
+            )
+        }
+        updateSelector() {
+            var t = this.instruments.reduce((t,e)=>t + e.rows, 0);
+            this.selector.update({
+                defaultY: this.offsets[this.defaultInstrumentIndex],
+                rows: t,
+                cols: this.instruments[0] ? this.instruments[0].cols : 0
+            })
+        }
+        update() {
+            this.computeOffsets(),
+            this.updateSelector()
+        }
+        registerInstrument(t) {
+            var e = this
+              , n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+            this.instruments.push(t),
+            t.on("reset", ()=>this.update()),
+            n && (this.defaultInstrumentIndex = this.instruments.length - 1);
+            var i = new ti(t);
+            i.on("testPosition", (function() {
+                return e.onTestPosition(...arguments)
+            }
+            )),
+            i.on("pointerdown", (function() {
+                return e.onInteractionStart(...arguments)
+            }
+            )),
+            i.on("add", (function() {
+                console.log("i.on.add", arguments);
+                return e.onAddNote(...arguments)
+            }
+            )),
+            i.on("remove", (function() {
+                return e.onRemoveNote(...arguments)
+            }
+            )),
+            this.touches.push(i),
+            this.update()
+        }
+
+
+        indexToInstrument(t) {
+            console.log("t", t);
+            console.log("this.offsets[n]: ", this.offsets[n]);
+            console.log("this.offsets.length: ",this.offsets.length);
+            for (var e = 0, n = this.offsets.length - 1; n >= 0; n--)
+                if (this.offsets[n] <= t.y) {
+                    e = n;
+                    break
+                }
+            console.log("e: ", e);
+            return {
+                instrument: this.instruments[e],
+                pos: {
+                    x: t.x,
+                    y: t.y - this.offsets[e]
+                }
+            }
+        }
+        onInteractionStart() {
+            r.emit("history:push", {
+                type: "start"
+            })
+        }
+        onSelectorOutOfBounds() {
+            this.emit("outofbounds")
+        }
+        onSelectorChange(t) {
+            var e = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1]
+              , {instrument: n, pos: i} = this.indexToInstrument(t)
+              , r = [];
+            this.instruments.forEach(t=>{
+                var e = {
+                    x: i.x,
+                    y: t === n ? i.y : -1
+                };
+                t.select(e),
+                r.push({
+                    instrument: t,
+                    position: e
+                })
+            }
+            ),
+            e && this.emit("select", r)
+        }
+        onSelectorToggle(t) {
+            var {instrument: e, pos: n} = this.indexToInstrument(t);
+            e.has(n) ? this.onRemoveNote(t) : this.onAddNote(t)
+        }
+        onSelectorDelete(t) {
+            for (var e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, n = 0; n < this.selector.rows; n++)
+                this.onRemoveNote({
+                    x: t.x,
+                    y: n
+                }, e)
+        }
+        onTestPosition(t, e) {
+            var {instrument: n, pos: i} = this.indexToInstrument(t);
+            e(n.has(i)),
+            this.selector.hide()
+        }
+        onAddNote(t) {
+            console.log("t: ", t);
+            var {instrument: e, pos: n} = this.indexToInstrument(t);
+            console.log("onAddNote");
+            console.log("n: ", n);
+            e.addNote(n);
+            this.emit("song-changed");
+        }
+        onRemoveNote(t) {
+            var e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
+              , {instrument: n, pos: i} = this.indexToInstrument(t);
+            n.removeNote(i) && (e && e.isDeleteKey && this.emit("play-delete-sound"),
+            this.emit("song-changed"))
+        }
+        selectDefaultInstrument(t) {
+            try {
+                var e = this.instruments[this.defaultInstrumentIndex].pitchToIndex(t)
+                  , n = e + this.offsets[this.defaultInstrumentIndex];
+                return this.selector.set({
+                    y: n
+                }),
+                e
+            } catch (t) {
+                return NaN
+            }
+        }
+
+        random()
+        {
+            console.log("random");
+        }
+    }
+
+    function sr() {
+        console.log("hr.songChanged = !0");
+        hr.songChanged = !0,
+        tr.instrument.timeline._length + tr.percussion.timeline._length < 1 ? hr.disableSaveButton(!0) : hr.disableSaveButton(!1)
+    }
+
+    var rr = new ei;
+    rr.random();
+
     rr.registerInstrument(ir.percussion),
     rr.registerInstrument(ir.instrument, !0),
     rr.on("select", t=>ir.select(t)),
@@ -28423,6 +28484,7 @@ and limitations under the License.
         }
     }
     (rr);
+
     var ar = new ai(Ki,rr);
     ar.connected().then(()=>{
         hr.enableKeyboard()
@@ -28434,6 +28496,8 @@ and limitations under the License.
     }
     );
     var cr = new yi(Ki,rr);
+
+
     ir.instrument.renderer.registerDrawMethod(cr.render),
     new class {
         constructor() {
@@ -28684,16 +28748,31 @@ and limitations under the License.
             this.url.clear()
         }
     }
+
+
     (Ki,tr);
     dr.emitter.on("save-success", t=>{
         ur.triggerShare(t)
     }
     ),
+
+
     $i && dr.loadSong($i),
-    ["static/images/instruments/tonal-marimba.svg", "static/images/instruments/perc-drum-machine.svg", "static/images/icon-mic.svg", "static/images/icon-quantity-add.svg", "static/images/icon-quantity-minus.svg", "static/images/icon-down-caret.svg", "static/images/instruments/tonal-piano.svg", "static/images/instruments/tonal-synth.svg", "static/images/instruments/tonal-violin.svg", "static/images/instruments/tonal-woodwind.svg", "static/images/instruments/perc-woodblock.svg", "static/images/instruments/perc-snare-drum.svg", "static/images/instruments/perc-conga.svg", "static/images/icon-mic-red.svg", "static/images/animated-mic.svg", "static/images/animated-midi.svg"].forEach(t=>{
+    ["static/images/instruments/tonal-marimba.svg", "static/images/instruments/perc-drum-machine.svg", "static/images/icon-mic.svg", "static/images/icon-quantity-add.svg", "static/images/icon-quantity-minus.svg", "static/images/icon-down-caret.svg", "static/images/instruments/tonal-piano.svg", "static/images/instruments/tonal-synth.svg", "static/images/instruments/tonal-violin.svg", "static/images/instruments/tonal-woodwind.svg", "static/images/instruments/perc-woodblock.svg", "static/images/instruments/perc-snare-drum.svg", "static/images/instruments/perc-conga.svg",
+    "static/images/icon-mic-red.svg", "static/images/animated-mic.svg", "static/images/animated-midi.svg"].forEach(t=>{
         (new Image).src = t
     }
-    )
+    );
+
+    for(var i = 0;i < 8;i++)
+    {
+        var xCell = Math.floor(Math.random() * 8);
+        var yCell = Math.floor(Math.random() * 8);
+        var cell = {x:xCell, y:yCell};
+        rr.onAddNote(cell);
+    }
+
+
 }
 ]);
 //# sourceMappingURL=Main.js.map
