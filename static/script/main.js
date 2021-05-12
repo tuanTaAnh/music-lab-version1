@@ -28689,9 +28689,9 @@ and limitations under the License.
         {
             bar_array[i] = 0;
         }
-        for(var i = 0;i < random;i++)
+        while(count < random && count < length_of_beats)
         {
-//            console.log("i: ",i);
+        //            console.log("i: ",i);
             var xCell = Math.floor(Math.random() * length_of_beats);
             var yCell = Math.floor(Math.random() * 11) + 2;
 //            console.log("xCell: ", xCell, " yCell: ", yCell);
