@@ -1806,8 +1806,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         ,
         o.Tween = function(t, e) {
-            console.log("Tween");
-            console.log("t: ", t);
+//            console.log("Tween");
+//            console.log("t: ", t);
            this._object = t,
             this._valuesStart = {},
             this._valuesEnd = {},
@@ -17751,7 +17751,7 @@ document.addEventListener('DOMContentLoaded', function () {
     t.exports = r.locals || {}
 }
 , function(t, e, n) {
-    (e = n(24)(!1)).push([t.i, '#header-back,#topbar .header-link{font-family:"Poppins",sans-serif;letter-spacing:.1ex}@keyframes dash{0%{stroke-dashoffset:120}50%{stroke-dashoffset:30;transform:rotate(240deg)}100%{stroke-dashoffset:120;transform:rotate(720deg)}}#topbar{position:absolute;left:0px;width:100%;height:81px;top:0px;box-sizing:border-box;border-bottom:1px solid #f5f5f5;box-shadow:1px 1px 1px 1px rgba(0,0,0,.02)}#topbar .header-link{position:relative;display:inline-block;font-size:18px;color:#666;padding-left:35px;cursor:pointer;background:transparent}#topbar .header-link::before{top:50%;transform:translate(0, -50%);position:absolute;display:block;content:"\\a";width:23px;height:24px;background-size:contain;background-repeat:no-repeat;background-position:center;left:0}@media(max-width: 767px){#topbar .header-link{overflow:hidden;text-indent:150%;white-space:nowrap;width:20px;padding-left:0;padding-right:0}#topbar .header-link::before{width:20px;height:20px}}@media(max-width: 495px){#topbar #header-settings{display:none}}@media(max-width: 767px){#topbar{height:60px}}#header-settings::before{background-image:url(static/images/icon-startover-small.svg)}#header-about::before{background-image:url(static/images/icon-about-small.svg)}#toplinks{top:50%;transform:translate(0, -50%);position:absolute;right:20px}#toplinks>button,#toplinks>div{margin-left:30px}@media(max-width: 767px){#toplinks>button,#toplinks>div{margin-left:15px}}@media(max-width: 767px){#toplinks{height:34px}}#header-back{top:50%;transform:translate(0, -50%);position:absolute;background:transparent;cursor:pointer;position:relative;overflow:hidden;padding-left:0;padding-right:0;min-width:62px;padding-top:65px;font-size:15px;color:#666;left:20px;height:0;position:absolute;padding-top:40px;width:40px;min-width:40px}#header-back::selection{background:none}#header-back:hover:before{background-color:#f5f5f5}#header-back[disabled]{opacity:.3}#header-back[disabled]:hover:before{background-color:transparent}#header-back:before{content:"\\a";position:absolute;background-position:center;background-repeat:no-repeat;top:0;border-radius:50%;background-size:contain}#header-back:before{left:50%;transform:translate(-50%, 0);position:absolute;width:60px;height:60px;line-height:60px}@media(max-width: 767px){#header-back{font-size:10px;min-width:42px;width:54px;padding-top:42px;height:calc(1.6em + 40px)}#header-back:before{width:40px;height:40px;line-height:40px}#header-back span{display:none}}@media(min-width: 768px)and (max-width: 959px){#header-back{min-width:46px;padding-top:46px;font-size:12px}#header-back:before{width:44px;height:44px;line-height:44px}}@media(min-width: 768px)and (max-width: 959px){#header-back{padding-top:40px;width:40px;min-width:40px}}@media(max-width: 767px){#header-back{left:16px;padding-top:40px;width:40px;min-width:40px;height:0}}#header-back::before{background-image:url(static/images/icon-back.svg);width:40px;height:40px;line-height:40px}@media(min-width: 768px)and (max-width: 959px){#header-back::before{width:40px;height:40px}}@media(max-width: 767px){#header-back::before{width:40px;height:40px}}#header-back.fade{opacity:.2}#header-logo{left:50%;top:50%;transform:translate(-50%, -50%);position:absolute;font-family:"Quicksand",sans-serif;text-transform:uppercase;font-weight:700;text-align:center;font-size:20px;letter-spacing:2px}@media(max-width: 767px){#header-logo{font-size:17px}}', ""]),
+    (e = n(24)(!1)).push([t.i, '#header-back,#topbar .header-link{font-family:"Poppins",sans-serif;letter-spacing:.1ex}@keyframes dash{0%{stroke-dashoffset:120}50%{stroke-dashoffset:30;transform:rotate(240deg)}100%{stroke-dashoffset:120;transform:rotate(720deg)}}#topbar{position:absolute;left:0px;width:100%;height:81px;top:0px;box-sizing:border-box;border-bottom:1px solid #f5f5f5;box-shadow:1px 1px 1px 1px rgba(0,0,0,.02)}#topbar .header-link{position:relative;display:inline-block;font-size:18px;color:#666;padding-left:35px;cursor:pointer;background:transparent}#topbar .header-link::before{top:50%;transform:translate(0, -50%);position:absolute;display:block;content:"\\a";width:23px;height:24px;background-size:contain;background-repeat:no-repeat;background-position:center;left:0}@media(max-width: 767px){#topbar .header-link{overflow:hidden;text-indent:150%;white-space:nowrap;width:20px;padding-left:0;padding-right:0}#topbar .header-link::before{width:20px;height:20px}}@media(max-width: 767px){#topbar{height:60px}}#header-settings::before{background-image:url(static/images/icon-startover-small.svg)}#header-about::before{background-image:url(static/images/icon-about-small.svg)}#toplinks{top:50%;transform:translate(0, -50%);position:absolute;right:20px}#toplinks>button,#toplinks>div{margin-left:30px}@media(max-width: 767px){#toplinks>button,#toplinks>div{margin-left:15px}}@media(max-width: 767px){#toplinks{height:34px}}#header-back{top:50%;transform:translate(0, -50%);position:absolute;background:transparent;cursor:pointer;position:relative;overflow:hidden;padding-left:0;padding-right:0;min-width:62px;padding-top:65px;font-size:15px;color:#666;left:20px;height:0;position:absolute;padding-top:40px;width:40px;min-width:40px}#header-back::selection{background:none}#header-back:hover:before{background-color:#f5f5f5}#header-back[disabled]{opacity:.3}#header-back[disabled]:hover:before{background-color:transparent}#header-back:before{content:"\\a";position:absolute;background-position:center;background-repeat:no-repeat;top:0;border-radius:50%;background-size:contain}#header-back:before{left:50%;transform:translate(-50%, 0);position:absolute;width:60px;height:60px;line-height:60px}@media(max-width: 767px){#header-back{font-size:10px;min-width:42px;width:54px;padding-top:42px;height:calc(1.6em + 40px)}#header-back:before{width:40px;height:40px;line-height:40px}#header-back span{display:none}}@media(min-width: 768px)and (max-width: 959px){#header-back{min-width:46px;padding-top:46px;font-size:12px}#header-back:before{width:44px;height:44px;line-height:44px}}@media(min-width: 768px)and (max-width: 959px){#header-back{padding-top:40px;width:40px;min-width:40px}}@media(max-width: 767px){#header-back{left:16px;padding-top:40px;width:40px;min-width:40px;height:0}}#header-back::before{background-image:url(static/images/icon-back.svg);width:40px;height:40px;line-height:40px}@media(min-width: 768px)and (max-width: 959px){#header-back::before{width:40px;height:40px}}@media(max-width: 767px){#header-back::before{width:40px;height:40px}}#header-back.fade{opacity:.2}#header-logo{left:50%;top:50%;transform:translate(-50%, -50%);position:absolute;font-family:"Quicksand",sans-serif;text-transform:uppercase;font-weight:700;text-align:center;font-size:20px;letter-spacing:2px}@media(max-width: 767px){#header-logo{font-size:17px}}', ""]),
     e.locals = {
         blue: "#16a8f0",
         red: "red",
@@ -17838,7 +17838,7 @@ document.addEventListener('DOMContentLoaded', function () {
     t.exports = r.locals || {}
 }
 , function(t, e, n) {
-    (e = n(24)(!1)).push([t.i, '#tempo-slider input.input-number,#tempo-slider,#reset-button,#play-button,#bottom .clear-button,#bottom .button{font-family:"Poppins",sans-serif;letter-spacing:.1ex}@keyframes dash{0%{stroke-dashoffset:120}50%{stroke-dashoffset:30;transform:rotate(240deg)}100%{stroke-dashoffset:120;transform:rotate(720deg)}}#bottom{border-top:1px solid #f5f5f5;position:absolute;left:0px;bottom:0px;width:100%;height:109px;font-size:12px;text-align:center;background:#fff}#bottom .button{background:transparent;cursor:pointer;position:relative;overflow:hidden;padding-left:0;padding-right:0;min-width:62px;padding-top:65px;font-size:15px;color:#666;width:9.5ch;display:inline-block;margin-left:8px}#bottom .button::selection{background:none}#bottom .button:hover:before{background-color:#f5f5f5}#bottom .button[disabled]{opacity:.3}#bottom .button[disabled]:hover:before{background-color:transparent}#bottom .button:before{content:"\\a";position:absolute;background-position:center;background-repeat:no-repeat;top:0;border-radius:50%;background-size:contain}#bottom .button:before{left:50%;transform:translate(-50%, 0);position:absolute;width:60px;height:60px;line-height:60px}@media(max-width: 767px){#bottom .button{font-size:10px;min-width:42px;width:54px;padding-top:42px;height:calc(1.6em + 40px)}#bottom .button:before{width:40px;height:40px;line-height:40px}#bottom .button span{display:none}}@media(min-width: 768px)and (max-width: 959px){#bottom .button{min-width:46px;padding-top:46px;font-size:12px}#bottom .button:before{width:44px;height:44px;line-height:44px}}#bottom .button:before{border:1px solid rgba(0,0,0,.1)}@media(min-width: 768px)and (max-width: 959px){#bottom .button{margin-left:4px}}@media(max-width: 767px){#bottom .button{display:block;position:absolute;margin-left:0px;transform:translateX(-50%)}}#bottom .clear-button{background:transparent;cursor:pointer;position:relative;overflow:hidden;padding-left:0;padding-right:0;min-width:62px;padding-top:65px;font-size:15px;color:#666;display:inline-block}#bottom .clear-button::selection{background:none}#bottom .clear-button:hover:before{background-color:#f5f5f5}#bottom .clear-button[disabled]{opacity:.3}#bottom .clear-button[disabled]:hover:before{background-color:transparent}#bottom .clear-button:before{content:"\\a";position:absolute;background-position:center;background-repeat:no-repeat;top:0;border-radius:50%;background-size:contain}#bottom .clear-button:before{left:50%;transform:translate(-50%, 0);position:absolute;width:60px;height:60px;line-height:60px}@media(max-width: 767px){#bottom .clear-button{font-size:10px;min-width:42px;width:54px;padding-top:42px;height:calc(1.6em + 40px)}#bottom .clear-button:before{width:40px;height:40px;line-height:40px}#bottom .clear-button span{display:none}}@media(min-width: 768px)and (max-width: 959px){#bottom .clear-button{min-width:46px;padding-top:46px;font-size:12px}#bottom .clear-button:before{width:44px;height:44px;line-height:44px}}#bottom .clear-button:hover::before{background-color:transparent}#bottom #bottom-expand-button{display:none}@media(max-width: 767px){#bottom #bottom-expand-button{display:block;position:absolute;right:16px;top:15px}}#bottom #meter-button{display:none}#bottom #meter-button::before{background-image:url(static/images/icon-meter.svg)}@media(max-width: 767px){#bottom #meter-button{display:block;top:13px;left:45.5vw;z-index:4}}@media(max-width: 495px){#bottom #meter-button{top:5px;left:70vw}}#bottom #meter-button.expand.button:before{border-color:transparent}#bottom #meter-button.expand.button:hover:before{background-color:transparent}#bottom #bottom-left .button,#bottom #bottom-left #play-button{float:left}@media(max-width: 767px){#bottom #bottom-left .button,#bottom #bottom-left #play-button{float:none}}#bottom #bottom-right .button{width:8.5ch}@media(max-width: 767px){#bottom{height:80px}}@media(max-width: 495px){#bottom{height:125px}}#bottom-left{top:50%;transform:translate(0, -50%);position:absolute;left:20px}@media(max-width: 767px){#bottom-left{position:static;top:0;transform:none}#bottom-left::after{position:absolute;width:1px;content:"\\a";background-color:#f5f5f5;height:60px;left:17vw;top:10px}}@media(max-width: 495px){#bottom-left::after{height:100px;left:26vw;top:13px}}#bottom-right{top:50%;transform:translate(0, -50%);position:absolute;right:20px}@media(max-width: 767px){#bottom-right{position:static;top:0;transform:none}#bottom-right::after{position:absolute;width:1px;content:"\\a";background-color:#f5f5f5;height:60px;left:85vw;top:10px}}@media(max-width: 495px){#bottom-right::after{display:none}}#play-button{background:transparent;cursor:pointer;position:relative;overflow:hidden;padding-left:0;padding-right:0;height:80px;width:80px;display:inline-block;margin-right:20px}#play-button::selection{background:none}#play-button:hover:before{background-color:#f5f5f5}#play-button[disabled]{opacity:.3}#play-button[disabled]:hover:before{background-color:transparent}#play-button:before{content:"\\a";position:absolute;background-position:center;background-repeat:no-repeat;top:0;border-radius:50%;background-size:contain}#play-button:before{left:0;width:80px;height:80px;line-height:80px}@media(max-width: 767px){#play-button{width:60px;height:60px}#play-button:before{width:60px;height:60px;line-height:60px}}@media(min-width: 768px)and (max-width: 959px){#play-button{min-width:64px;width:64px;padding-top:64px;height:64px}#play-button:before{width:64px;height:64px;line-height:64px}}#play-button.playing:before{background-image:url(static/images/icon-stop.svg);background-position:center}#play-button:before{background-color:#16a8f0;background-image:url(static/images/icon-play.svg);background-position:55%;background-size:34%;text-align:center;text-transform:uppercase}#play-button:hover{margin-right:20px}#play-button:hover:before{background-color:#57c1f9}@media(min-width: 768px)and (max-width: 959px){#play-button{margin-right:16px}#play-button:hover{margin-right:16px}}@media(max-width: 767px){#play-button{position:absolute;left:8vw;top:10px;transform:translateX(-50%)}}@media(max-width: 495px){#play-button{left:13vw;top:31px}}#instrument-toggle-button{width:9.6ch}#instrument-toggle-button.instrument-piano::before{background-image:url(static/images/instruments/tonal-piano.svg)}#instrument-toggle-button.instrument-woodwind::before{background-image:url(static/images/instruments/tonal-woodwind.svg)}#instrument-toggle-button.instrument-strings::before{background-image:url(static/images/instruments/tonal-violin.svg)}#instrument-toggle-button.instrument-marimba::before{background-image:url(static/images/instruments/tonal-marimba.svg)}#instrument-toggle-button.instrument-synth::before{background-image:url(static/images/instruments/tonal-synth.svg)}@media(max-width: 767px){#instrument-toggle-button{top:13px;left:23.5vw}}@media(max-width: 495px){#instrument-toggle-button{top:5px;left:36vw}}#percussion-toggle-button{width:9ch;margin-left:8px}#percussion-toggle-button.instrument-conga::before{background-image:url(static/images/instruments/perc-conga.svg)}#percussion-toggle-button.instrument-electronic::before{background-image:url(static/images/instruments/perc-drum-machine.svg)}#percussion-toggle-button.instrument-kit::before{background-image:url(static/images/instruments/perc-snare-drum.svg)}#percussion-toggle-button.instrument-blocks::before{background-image:url(static/images/instruments/perc-woodblock.svg)}@media(max-width: 767px){#percussion-toggle-button{top:13px;left:34.5vw}}@media(max-width: 495px){#percussion-toggle-button{top:5px;left:53vw}}#undo-button::before{background-image:url(static/images/icon-undo.svg)}@media(max-width: 767px){#undo-button{top:13px;left:67.5vw}}@media(max-width: 495px){#undo-button{top:65px;left:53vw}}#reset-button{background:transparent;cursor:pointer;position:relative;overflow:hidden;padding-left:0;padding-right:0;min-width:62px;padding-top:65px;font-size:15px;color:#666;display:none}#reset-button::selection{background:none}#reset-button:hover:before{background-color:#f5f5f5}#reset-button[disabled]{opacity:.3}#reset-button[disabled]:hover:before{background-color:transparent}#reset-button:before{content:"\\a";position:absolute;background-position:center;background-repeat:no-repeat;top:0;border-radius:50%;background-size:contain}#reset-button:before{left:50%;transform:translate(-50%, 0);position:absolute;width:60px;height:60px;line-height:60px}@media(max-width: 767px){#reset-button{font-size:10px;min-width:42px;width:54px;padding-top:42px;height:calc(1.6em + 40px)}#reset-button:before{width:40px;height:40px;line-height:40px}#reset-button span{display:none}}@media(min-width: 768px)and (max-width: 959px){#reset-button{min-width:46px;padding-top:46px;font-size:12px}#reset-button:before{width:44px;height:44px;line-height:44px}}#bottom #reset-button{display:none}#bottom #reset-button::before{background-image:url(static/images/icon-startover-small.svg)}#bottom #reset-button:hover:before{background-color:#57c1f9}@media(max-width: 767px){#bottom #reset-button{display:none}}@media(max-width: 495px){#bottom #reset-button{display:inline-block}}@media(max-width: 495px){#reset-button{top:65px;left:87vw}}#bottom #settings-button::before{background-image:url(static/images/icon-settings-gray.svg)}@media(max-width: 767px){#bottom #settings-button{display:inline-block}}@media(max-width: 767px){#settings-button{top:13px;left:56.5vw}}@media(max-width: 495px){#settings-button{top:65px;left:36vw}}#save-button::before{background-image:url(static/images/icon-save.svg)}@media(max-width: 767px){#save-button{top:13px;left:78.5vw}}@media(max-width: 495px){#save-button{top:65px;left:70vw}}#bottom #midi-button.button{transition:opacity .1s;pointer-events:initial;display:none}#bottom #midi-button.button.visible{display:inline-block}#bottom #midi-button.button:before{background-image:url(static/images/icon-keys.svg)}#bottom #midi-button.button.recording{color:red}#bottom #midi-button.button.recording::before{background-color:red;background-image:url(static/images/icon-keys-white.svg);border:1px solid red}#bottom #midi-button.button.recording:hover::before{background-color:red}@media(max-width: 767px){#bottom #midi-button.button{display:none;opacity:0;pointer-events:none}}#bottom #mic-button{display:none}#bottom #mic-button.visible{display:inline-block}#mic-button{opacity:1;pointer-events:initial}#mic-button::before{background-image:url(static/images/icon-mic.svg)}#mic-button #level{position:absolute;top:0px;left:0px;width:100%;height:100%;border:1px solid red;pointer-events:none;border-radius:50%;box-sizing:border-box;opacity:0;width:100px;height:100px;left:-20px;top:-19px}#mic-button.recording{color:red}#mic-button.recording #level{opacity:1}#mic-button.recording::before{background-color:red;background-image:url(static/images/icon-mic-white.svg);border:1px solid red}#mic-button.recording:hover::before{background-color:red}@media(max-width: 767px){#mic-button{right:auto;width:42px;top:13px;left:92vw}#mic-button.mobile-pointer-none{pointer-events:none}}@media(max-width: 495px){#mic-button{top:5px;left:87vw}}#tempo-slider{left:50%;transform:translate(-50%, 0);position:absolute;left:calc(50% - 31px);top:calc(50% - 15px);text-align:center;min-width:200px;width:calc(100% - 780px);max-width:450px}@media(min-width: 768px){#tempo-slider.has-midi{left:calc(50% - 57px)}}@media(min-width: 768px)and (max-width: 959px){#tempo-slider.has-midi{left:calc(50% - 49px)}}#tempo-slider .range-cover{display:inline-block;left:calc(60px + 16px);height:28px;position:absolute;width:calc(100% - 120px - 26px)}#tempo-slider input.input-number{margin-left:10px;color:#16a8f0;font-size:15px;border:none;float:right;margin-top:2px;width:40px;padding:0}#tempo-slider label{color:#666;float:left;font-size:15px;display:block;line-height:25px;margin-right:10px}@media(min-width: 768px)and (max-width: 959px){#tempo-slider{width:calc(100% - 660px);left:calc(50% - 13px)}#tempo-slider .range-cover{left:calc(60px + 5px);width:calc(100% - 120px - 6px)}}@media(max-width: 767px){#tempo-slider{border:1px solid #f5f5f5;height:250px;width:43px;top:-196px;transform:translateX(-50%);border-radius:24px;left:45.5vw;display:none;background:#fff;min-width:0}#tempo-slider label{display:none}#tempo-slider.show{overflow:visible;display:block}#tempo-slider .range-cover{transform:rotate(270deg) translate(-108px, -133px);width:calc(172px - 18px);margin:0}#tempo-slider input.input-number{margin-top:-10px;float:none;position:absolute;top:22px;left:3px;margin-left:0;text-align:center;width:38px;pointer-events:none}}@media(max-width: 495px){#tempo-slider{top:-203px;left:70vw}}', ""]),
+    (e = n(24)(!1)).push([t.i, '#tempo-slider input.input-number,#tempo-slider, #play-button,#bottom .clear-button,#bottom .button{font-family:"Poppins",sans-serif;letter-spacing:.1ex}@keyframes dash{0%{stroke-dashoffset:120}50%{stroke-dashoffset:30;transform:rotate(240deg)}100%{stroke-dashoffset:120;transform:rotate(720deg)}}#bottom{border-top:1px solid #f5f5f5;position:absolute;left:0px;bottom:0px;width:100%;height:109px;font-size:12px;text-align:center;background:#fff}#bottom .button{background:transparent;cursor:pointer;position:relative;overflow:hidden;padding-left:0;padding-right:0;min-width:62px;padding-top:65px;font-size:15px;color:#666;width:9.5ch;display:inline-block;margin-left:8px}#bottom .button::selection{background:none}#bottom .button:hover:before{background-color:#f5f5f5}#bottom .button[disabled]{opacity:.3}#bottom .button[disabled]:hover:before{background-color:transparent}#bottom .button:before{content:"\\a";position:absolute;background-position:center;background-repeat:no-repeat;top:0;border-radius:50%;background-size:contain}#bottom .button:before{left:50%;transform:translate(-50%, 0);position:absolute;width:60px;height:60px;line-height:60px}@media(max-width: 767px){#bottom .button{font-size:10px;min-width:42px;width:54px;padding-top:42px;height:calc(1.6em + 40px)}#bottom .button:before{width:40px;height:40px;line-height:40px}#bottom .button span{display:none}}@media(min-width: 768px)and (max-width: 959px){#bottom .button{min-width:46px;padding-top:46px;font-size:12px}#bottom .button:before{width:44px;height:44px;line-height:44px}}#bottom .button:before{border:1px solid rgba(0,0,0,.1)}@media(min-width: 768px)and (max-width: 959px){#bottom .button{margin-left:4px}}@media(max-width: 767px){#bottom .button{display:block;position:absolute;margin-left:0px;transform:translateX(-50%)}}#bottom .clear-button{background:transparent;cursor:pointer;position:relative;overflow:hidden;padding-left:0;padding-right:0;min-width:62px;padding-top:65px;font-size:15px;color:#666;display:inline-block}#bottom .clear-button::selection{background:none}#bottom .clear-button:hover:before{background-color:#f5f5f5}#bottom .clear-button[disabled]{opacity:.3}#bottom .clear-button[disabled]:hover:before{background-color:transparent}#bottom .clear-button:before{content:"\\a";position:absolute;background-position:center;background-repeat:no-repeat;top:0;border-radius:50%;background-size:contain}#bottom .clear-button:before{left:50%;transform:translate(-50%, 0);position:absolute;width:60px;height:60px;line-height:60px}@media(max-width: 767px){#bottom .clear-button{font-size:10px;min-width:42px;width:54px;padding-top:42px;height:calc(1.6em + 40px)}#bottom .clear-button:before{width:40px;height:40px;line-height:40px}#bottom .clear-button span{display:none}}@media(min-width: 768px)and (max-width: 959px){#bottom .clear-button{min-width:46px;padding-top:46px;font-size:12px}#bottom .clear-button:before{width:44px;height:44px;line-height:44px}}#bottom .clear-button:hover::before{background-color:transparent}#bottom #bottom-expand-button{display:none}@media(max-width: 767px){#bottom #bottom-expand-button{display:block;position:absolute;right:16px;top:15px}}#bottom #meter-button{display:none}#bottom #meter-button::before{background-image:url(static/images/icon-meter.svg)}@media(max-width: 767px){#bottom #meter-button{display:block;top:13px;left:43vw;z-index:4}}@media(max-width: 495px){#bottom #meter-button{top:5px;left:70vw}}#bottom #meter-button.expand.button:before{border-color:transparent}#bottom #meter-button.expand.button:hover:before{background-color:transparent}#bottom #bottom-left .button,#bottom #bottom-left #play-button{float:left}@media(max-width: 767px){#bottom #bottom-left .button,#bottom #bottom-left #play-button{float:none}}#bottom #bottom-right .button{width:8.5ch}@media(max-width: 767px){#bottom{height:80px}}@media(max-width: 495px){#bottom{height:125px}}#bottom-left{top:50%;transform:translate(0, -50%);position:absolute;left:20px}@media(max-width: 767px){#bottom-left{position:static;top:0;transform:none}#bottom-left::after{position:absolute;width:1px;content:"\\a";background-color:#f5f5f5;height:60px;left:17vw;top:10px}}@media(max-width: 495px){#bottom-left::after{height:100px;left:26vw;top:13px}}#bottom-right{top:50%;transform:translate(0, -50%);position:absolute;right:20px}@media(max-width: 767px){#bottom-right{position:static;top:0;transform:none}#bottom-right::after{position:absolute;width:1px;content:"\\a";background-color:#f5f5f5;height:60px;left:85vw;top:10px}}@media(max-width: 495px){#bottom-right::after{display:none}}#play-button{background:transparent;cursor:pointer;position:relative;overflow:hidden;padding-left:0;padding-right:0;height:80px;width:80px;display:inline-block;margin-right:20px}#play-button::selection{background:none}#play-button:hover:before{background-color:#f5f5f5}#play-button[disabled]{opacity:.3}#play-button[disabled]:hover:before{background-color:transparent}#play-button:before{content:"\\a";position:absolute;background-position:center;background-repeat:no-repeat;top:0;border-radius:50%;background-size:contain}#play-button:before{left:0;width:80px;height:80px;line-height:80px}@media(max-width: 767px){#play-button{width:60px;height:60px}#play-button:before{width:60px;height:60px;line-height:60px}}@media(min-width: 768px)and (max-width: 959px){#play-button{min-width:64px;width:64px;padding-top:64px;height:64px}#play-button:before{width:64px;height:64px;line-height:64px}}#play-button.playing:before{background-image:url(static/images/icon-stop.svg);background-position:center}#play-button:before{background-color:#16a8f0;background-image:url(static/images/icon-play.svg);background-position:55%;background-size:34%;text-align:center;text-transform:uppercase}#play-button:hover{margin-right:20px}#play-button:hover:before{background-color:#57c1f9}@media(min-width: 768px)and (max-width: 959px){#play-button{margin-right:16px}#play-button:hover{margin-right:16px}}@media(max-width: 767px){#play-button{position:absolute;left:8vw;top:10px;transform:translateX(-50%)}}@media(max-width: 495px){#play-button{left:13vw;top:31px}}#instrument-toggle-button{width:9.6ch}#instrument-toggle-button.instrument-piano::before{background-image:url(static/images/instruments/tonal-piano.svg)}#instrument-toggle-button.instrument-woodwind::before{background-image:url(static/images/instruments/tonal-woodwind.svg)}#instrument-toggle-button.instrument-strings::before{background-image:url(static/images/instruments/tonal-violin.svg)}#instrument-toggle-button.instrument-marimba::before{background-image:url(static/images/instruments/tonal-marimba.svg)}#instrument-toggle-button.instrument-synth::before{background-image:url(static/images/instruments/tonal-synth.svg)}@media(max-width: 767px){#instrument-toggle-button{top:13px;left:23.5vw}}@media(max-width: 495px){#instrument-toggle-button{top:5px;left:36vw}}#percussion-toggle-button{width:9ch;margin-left:8px}#percussion-toggle-button.instrument-conga::before{background-image:url(static/images/instruments/perc-conga.svg)}#percussion-toggle-button.instrument-electronic::before{background-image:url(static/images/instruments/perc-drum-machine.svg)}#percussion-toggle-button.instrument-kit::before{background-image:url(static/images/instruments/perc-snare-drum.svg)}#percussion-toggle-button.instrument-blocks::before{background-image:url(static/images/instruments/perc-woodblock.svg)}@media(max-width: 767px){#percussion-toggle-button{top:13px;left:32.5vw}}@media(max-width: 495px){#percussion-toggle-button{top:5px;left:53vw}}#undo-button::before{background-image:url(static/images/icon-undo.svg)}@media(max-width: 767px){#undo-button{top:13px;left:61.5vw}}@media(max-width: 495px){#undo-button{top:65px;left:53vw}}#bottom #random-button::before{background-image:url(static/images/random-button.svg)}#settings-button::before{background-image:url(static/images/icon-settings-gray.svg)}@media(max-width: 767px){#settings-button{top:13px;left:52vw}}@media(max-width: 495px){#settings-button{top:65px;left:36vw}}#save-button::before{background-image:url(static/images/icon-save.svg)}@media(max-width: 767px){#save-button{top:13px;left:71.5vw}}@media(max-width: 495px){#save-button{top:65px;left:70vw}}#bottom #midi-button.button{transition:opacity .1s;pointer-events:initial;display:none}#bottom #midi-button.button.visible{display:inline-block}#bottom #midi-button.button:before{background-image:url(static/images/icon-keys.svg)}#bottom #midi-button.button.recording{color:red}#bottom #midi-button.button.recording::before{background-color:red;background-image:url(static/images/icon-keys-white.svg);border:1px solid red}#bottom #midi-button.button.recording:hover::before{background-color:red}@media(max-width: 767px){#bottom #midi-button.button{display:none;opacity:0;pointer-events:none}}#bottom #mic-button{display:none}#bottom #mic-button.visible{display:inline-block}#mic-button{opacity:1;pointer-events:initial}#mic-button::before{background-image:url(static/images/icon-mic.svg)}#mic-button #level{position:absolute;width:100%;height:100%;border:1px solid red;pointer-events:none;border-radius:50%;box-sizing:border-box;opacity:0;width:100px;height:100px;left:-20px;top:-19px}#mic-button.recording{color:red}#mic-button.recording #level{opacity:1}#mic-button.recording::before{background-color:red;background-image:url(static/images/icon-mic-white.svg);border:1px solid red}#mic-button.recording:hover::before{background-color:red}@media(max-width: 767px){#random-button{top:13px;left:80vw}}@media(max-width: 767px){#mic-button{right:auto;width:42px;top:13px;left:93vw}#mic-button.mobile-pointer-none{pointer-events:none}}@media(max-width: 495px){#mic-button{top:5px;left:87vw}}#tempo-slider{left:50%;transform:translate(-50%, 0);position:absolute;left:calc(50% - 31px);top:calc(50% - 15px);text-align:center;min-width:200px;width:calc(100% - 780px);max-width:450px}@media(min-width: 768px){#tempo-slider.has-midi{left:calc(50% - 57px)}}@media(min-width: 768px)and (max-width: 959px){#tempo-slider.has-midi{left:calc(50% - 49px)}}#tempo-slider .range-cover{display:inline-block;left:calc(60px + 16px);height:28px;position:absolute;width:calc(100% - 120px - 26px)}#tempo-slider input.input-number{margin-left:10px;color:#16a8f0;font-size:15px;border:none;float:right;margin-top:2px;width:40px;padding:0}#tempo-slider label{color:#666;float:left;font-size:15px;display:block;line-height:25px;margin-right:10px}@media(min-width: 768px)and (max-width: 959px){#tempo-slider{width:calc(100% - 660px);left:calc(50% - 13px)}#tempo-slider .range-cover{left:calc(60px + 5px);width:calc(100% - 120px - 6px)}}@media(max-width: 767px){#tempo-slider{border:1px solid #f5f5f5;height:250px;width:43px;top:-196px;transform:translateX(-50%);border-radius:24px;left:45.5vw;display:none;background:#fff;min-width:0}#tempo-slider label{display:none}#tempo-slider.show{overflow:visible;display:block}#tempo-slider .range-cover{transform:rotate(270deg) translate(-108px, -133px);width:calc(172px - 18px);margin:0}#tempo-slider input.input-number{margin-top:-10px;float:none;position:absolute;top:22px;left:3px;margin-left:0;text-align:center;width:38px;pointer-events:none}}@media(max-width: 495px){#random-button{top:65px;left:87vw}}@media(max-width: 495px){#tempo-slider{top:-203px;left:70vw}}', ""]),
     e.locals = {
         blue: "#16a8f0",
         red: "red",
@@ -17904,6 +17904,8 @@ document.addEventListener('DOMContentLoaded', function () {
     function d(t) {
         return 69 + 12 * Math.log2(t / 440)
     }
+
+
     class p extends i.EventEmitter {
         constructor() {
             super(),
@@ -18463,6 +18465,8 @@ document.addEventListener('DOMContentLoaded', function () {
             this.isOffline = !1
         }
     }
+
+
     class nt extends et {
         constructor() {
             super(),
@@ -25169,7 +25173,7 @@ and limitations under the License.
             this.instrument = new fn(t,n,i,r)
         }
         addNoteVN(t) {
-            console.log("addNote this.part: ", t);
+//            console.log("addNote this.part: ", t);
             this.part.add(t.time * _t("4n") / this.options.subdivision, t),
             t.envelope = 0
         }
@@ -25531,8 +25535,8 @@ and limitations under the License.
             return this.midiTrack.has(t.x, e)
         }
         addNote(t) {
-            console.log("addNote: ", t);
-            console.log("addNote typeof: ", typeof(t) );
+//            console.log("addNote: ", t);
+//            console.log("addNote typeof: ", typeof(t) );
             try {
                 var e = this.indexToPitch(t.y)
                   , n = this.midiTrack.add(t.x, e);
@@ -25664,6 +25668,8 @@ and limitations under the License.
       , Un = On.a.lightGrayFill
       , Fn = On.a.veryLightGrayFill;
     On.a.darkGrayFill;
+
+
     class Vn extends class {
         constructor() {
             var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : document.body
@@ -25695,7 +25701,7 @@ and limitations under the License.
     {
         constructor() {
             var t;
-            super(...arguments),
+            super(...arguments);
             this.groupCols = 1,
             this.groupRows = 7,
             this.cOffset = 4,
@@ -25731,7 +25737,7 @@ and limitations under the License.
             this.bounds.xMin = Math.floor(e.x / this.tileWidth),
             this.bounds.yMin = Math.floor(e.y / this.tileHeight),
             this.bounds.xMax = Math.min(this.bounds.xMin + n, t.cols),
-            this.bounds.yMax = Math.min(this.bounds.yMin + i, t.rows)
+            this.bounds.yMax = Math.min(this.bounds.yMin + i, t.rows);
         }
         flashSelector() {
             this.selector.opacity = 1,
@@ -25778,8 +25784,11 @@ and limitations under the License.
         drawNotes() {}
         drawGrid() {}
     }
+
+
     class qn extends Vn {
         drawNotes(t, e, n, i) {
+
             for (var r = this.bounds.yMin; r < this.bounds.yMax; r++)
                 for (var s = this.bounds.xMin; s < this.bounds.xMax; s++) {
                     var o = t.get(s, t.flipY(r));
@@ -27056,12 +27065,21 @@ and limitations under the License.
             var e = document.getElementById("settings-modal").querySelectorAll(".quantity")
               , n = document.getElementById("settings-modal").querySelectorAll(".select-wrap");
             this.options = t.toJSON();
+
             for (var i = 0; i < e.length; i++)
+             {
                 this.setupQuantity(e[i]);
+             }
+
+
             for (var r = 0; r < n.length; r++)
                 this.setupSelect(n[r]);
             this.setUpOctave(),
             this.on("submit", ()=>{
+                console.log("click submit");
+                console.log("this.options: ", this.options);
+                infor = this.options;
+                console.log("infor: ", infor);
                 this.emit("options", this.options)
             }
             ),
@@ -27102,47 +27120,53 @@ and limitations under the License.
             n.dispatchEvent(new Event("change")),
             n.style.opacity = 1
         }
-        setupQuantity(t) {
-            var e = document.createElement("div")
-              , n = document.createElement("div")
-              , i = document.createElement("div")
-              , r = document.createElement("img")
-              , s = document.createElement("img")
-              , o = document.createElement("div")
-              , a = document.createElement("input")
-              , c = t.querySelector("input")
-              , u = new Event("change")
-              , h = c.getAttribute("min")
-              , l = c.getAttribute("max")
-              , d = c.getAttribute("data-label") ? " " + c.getAttribute("data-label") : ""
-              , p = !1;
+        setupQuantity(t)
+        {
+            var e = document.createElement("div");
+            var n = document.createElement("div");
+            var i = document.createElement("div");
+            var r = document.createElement("img");
+            var s = document.createElement("img");
+            var o = document.createElement("div");
+            var a = document.createElement("input");
+
+            var c = t.querySelector("input");
+
+            var u = new Event("change");
+
+            var h = c.getAttribute("min"),
+                l = c.getAttribute("max"),
+                d = c.getAttribute("data-label") ? " " + c.getAttribute("data-label") : "",
+                p = !1;
+
             c.changeMax = function(t) {
                 l = t,
                 c.value > t && m(t)
-            }
-            ;
+            };
+
             var f = function(t) {
-                var e = parseInt(c.value, 10)
-                  , n = e;
-                (t > 0 && e + t <= l || t < 0 && e + t >= h) && (n = e + t,
-                c.value = n,
-                a.value = c.value),
-                c.dispatchEvent(u)
-            }
-              , m = function(t) {
+                var e = parseInt(c.value, 10), n = e;
+
+                return (t > 0 && e + t <= l || t < 0 && e + t >= h) && (n = e + t, c.value = n, a.value = c.value), c.dispatchEvent(u);
+            };
+
+            var m = function(t) {
                 var e = parseInt(c.value, 10)
                   , n = parseInt(t, 10);
+
                 n <= l && n >= h ? (c.value = n,
                 a.value = c.value) : a.value = e,
                 c.dispatchEvent(u)
-            }
-              , g = function t(e) {
+            };
+
+            var g = function t(e) {
                 p = setTimeout(()=>{
                     p && (f(e),
                     t(e))
                 }
                 , 100)
             };
+
             e.classList.add("quantity-nav"),
             t.appendChild(e),
             a.classList.add("quantity-cover"),
@@ -27205,7 +27229,10 @@ and limitations under the License.
             i.onclick = function() {
                 f(-1)
             }
+
         }
+
+
         setUpOctave() {
             var t = document.getElementById("settings-modal").querySelector('select[name="rootOctave"]')
               , e = document.getElementById("settings-modal").querySelector('input[name="octaves"]');
@@ -27527,12 +27554,13 @@ and limitations under the License.
             this.toplinks.id = "toplinks",
             this.container.appendChild(this.toplinks),
             e.appendChild(this.container),
-            this.settingsButton = document.createElement("button"),
-            this.settingsButton.id = "header-settings",
-            this.settingsButton.classList.add("header-link"),
-            this.settingsButton.textContent = "Restart",
-            this.toplinks.appendChild(this.settingsButton),
-            this.settingsButton.addEventListener("click", t=>{
+
+            this.headersettingsButton = document.createElement("button"),
+            this.headersettingsButton.id = "header-settings",
+            this.headersettingsButton.classList.add("header-link"),
+            this.headersettingsButton.textContent = "Restart",
+            this.toplinks.appendChild(this.headersettingsButton),
+            this.headersettingsButton.addEventListener("click", t=>{
                 t.preventDefault(),
                 this.emit("stop"),
                 this.emit("restart"),
@@ -27543,6 +27571,7 @@ and limitations under the License.
                 })
             }
             ),
+
             this.aboutButton = document.createElement("button"),
             this.aboutButton.id = "header-about",
             this.aboutButton.classList.add("header-link"),
@@ -27607,15 +27636,16 @@ and limitations under the License.
             ,
             this.triggerSettingsModal = t=>{
                 this.emit("stop"),
-                this.modals.startSong || (this.modals.startSong = new Ci(t),
-                this.modals.startSong.on("options", t=>{
-                    this.emit("settings-update", t)
-                }
-                ),
-                this.modals.startSong.on("cancel", ()=>{
-                    this.modals.startSong = !1
-                }
-                ))
+                this.modals.startSong || ( this.modals.startSong = new Ci(t),
+                    this.modals.startSong.on("options", t=>{
+                        this.emit("settings-update", t)
+                    }
+                    ),
+                    this.modals.startSong.on("cancel", ()=>{
+                        this.modals.startSong = !1
+                    }
+                    )
+                )
             }
             ,
             this.logo = document.createElement("div"),
@@ -27901,18 +27931,39 @@ and limitations under the License.
                 })
             }
             ),
-            this.resetButton = document.createElement("button"),
-            this.resetButton.id = "reset-button",
-            this.resetButton.classList.add("button"),
-            this.resetButton.textContent = "Restart",
-            this.resetButton.addEventListener("click", t=>{
+//            this.resetButton = document.createElement("button"),
+//            this.resetButton.id = "reset-button",
+//            this.resetButton.classList.add("button"),
+//            this.resetButton.textContent = "Restart",
+//            this.resetButton.addEventListener("click", t=>{
+//                t.preventDefault(),
+//                this.emit("stop"),
+//                this.emit("restart"),
+//                this.emit("settings-update", (new p).toJSON(), !0),
+//                Ti({
+//                    eventCategory: "bottom",
+//                    eventLabel: "restart"
+//                })
+//            }
+//            ),
+            this.randomButton = document.createElement("button"),
+            this.randomButton.id = "random-button",
+            this.randomButton.classList.add("button"),
+            this.randomButton.textContent = "Random",
+            this.randomButton.addEventListener("click", t=>{
+                var resetP = (new p).toJSON();
+                resetP.bears = infor.beats;
+                resetP.bars = infor.bars;
+                console.log("resetP", typeof(resetP));
+                console.log("resetP", (resetP));
                 t.preventDefault(),
                 this.emit("stop"),
                 this.emit("restart"),
-                this.emit("settings-update", (new p).toJSON(), !0),
+                this.emit("settings-update", JSON.stringify(resetP), !0),
+                this.emit("random"),
                 Ti({
                     eventCategory: "bottom",
-                    eventLabel: "restart"
+                    eventLabel: "random"
                 })
             }
             ),
@@ -27971,10 +28022,12 @@ and limitations under the License.
                 })
             }
             ),
+
             this.bottomRight.appendChild(this.midiButton),
             this.bottomRight.appendChild(this.micButton),
-            this.bottomRight.appendChild(this.resetButton),
+//            this.bottomRight.appendChild(this.resetButton),
             this.bottomRight.appendChild(this.settingsButton),
+            this.bottomRight.appendChild(this.randomButton),
             this.bottomRight.appendChild(this.undoButton),
             this.bottomRight.appendChild(this.saveButton),
             this.bottomLeft.appendChild(this.meterButton),
@@ -28335,7 +28388,7 @@ and limitations under the License.
             }
             )),
             i.on("add", (function() {
-                console.log("i.on.add", arguments);
+//                console.log("i.on.add", arguments);
                 return e.onAddNote(...arguments)
             }
             )),
@@ -28349,15 +28402,15 @@ and limitations under the License.
 
 
         indexToInstrument(t) {
-            console.log("t", t);
-            console.log("this.offsets[n]: ", this.offsets[n]);
-            console.log("this.offsets.length: ",this.offsets.length);
+//            console.log("t", t);
+//            console.log("this.offsets[n]: ", this.offsets[n]);
+//            console.log("this.offsets.length: ",this.offsets.length);
             for (var e = 0, n = this.offsets.length - 1; n >= 0; n--)
                 if (this.offsets[n] <= t.y) {
                     e = n;
                     break
                 }
-            console.log("e: ", e);
+//            console.log("e: ", e);
             return {
                 instrument: this.instruments[e],
                 pos: {
@@ -28409,10 +28462,10 @@ and limitations under the License.
             this.selector.hide()
         }
         onAddNote(t) {
-            console.log("t: ", t);
+//            console.log("t: ", t);
             var {instrument: e, pos: n} = this.indexToInstrument(t);
-            console.log("onAddNote");
-            console.log("n: ", n);
+//            console.log("onAddNote");
+//            console.log("n: ", n);
             e.addNote(n);
             this.emit("song-changed");
         }
@@ -28442,7 +28495,7 @@ and limitations under the License.
     }
 
     function sr() {
-        console.log("hr.songChanged = !0");
+//        console.log("hr.songChanged = !0");
         hr.songChanged = !0,
         tr.instrument.timeline._length + tr.percussion.timeline._length < 1 ? hr.disableSaveButton(!0) : hr.disableSaveButton(!1)
     }
@@ -28539,8 +28592,10 @@ and limitations under the License.
     }
     ),
     ur.on("restart", ()=>{
-        hr.firstLoad = !0,
-        hr.disableSaveButton(!0)
+        console.log("hr.firstLoad: ", hr.firstLoad);
+        hr.firstLoad = !0;
+        hr.disableSaveButton(!0);
+        console.log("hr.firstLoad: ", hr.firstLoad);
     }
     ),
     ur.on("request-wav", t=>{
@@ -28567,8 +28622,10 @@ and limitations under the License.
     }
     ),
     hr.on("restart", ()=>{
-        hr.firstLoad = !0,
-        hr.disableSaveButton(!0)
+//        console.log("hr.firstLoad HR: ", hr.firstLoad);
+        hr.firstLoad = !0;
+//        console.log("hr.firstLoad HR: ", hr.firstLoad);
+        hr.disableSaveButton(!0);
     }
     ),
     hr.on("instrument-change", t=>{
@@ -28594,6 +28651,7 @@ and limitations under the License.
     }
     ),
     hr.on("save", ()=>{
+        console.log("SAVE HR");
         dr.save(),
         ur.triggerShare()
     }
@@ -28608,6 +28666,39 @@ and limitations under the License.
     ),
     hr.on("settings", ()=>{
         ur.triggerSettingsModal(Ki)
+    }
+    ),
+    hr.on("random", ()=>{
+//        var e = document.getElementById("settings-modal").querySelectorAll(".quantity");
+        console.log("RANDOM EMIT");
+        console.log("infor bars: ", infor.bars);
+        console.log("infor beats: ", infor.beats);
+        var num_of_bars = infor.bars;
+        var beat_per_bar = infor.beats;
+        var length_of_beats = 2*num_of_bars*beat_per_bar;
+        var bar_array = new Array(length_of_beats);
+        console.log("length_of_beats: ", length_of_beats);
+        for(var i = 0;i < length_of_beats;i++)
+        {
+            bar_array[i] = 0;
+        }
+        for(var i = 0;i < length_of_beats;i++)
+        {
+//            console.log("i: ",i);
+            var xCell = Math.floor(Math.random() * length_of_beats);
+            var yCell = Math.floor(Math.random() * 11) + 2;
+//            console.log("xCell: ", xCell, " yCell: ", yCell);
+//            console.log("bar_array[xCell]: ", bar_array[xCell]);
+            if(bar_array[xCell] == 0)
+            {
+                var cell = {x:xCell, y:yCell};
+                rr.onAddNote(cell);
+//                console.log("YES");
+            }
+
+            bar_array[xCell] = 1;
+        }
+
     }
     ),
     hr.on("midi", ()=>{
@@ -28671,6 +28762,7 @@ and limitations under the License.
         nr.resumeContext()
     }
     );
+
     var dr = new class {
         constructor(t, e) {
             this.options = t,
@@ -28708,8 +28800,7 @@ and limitations under the License.
                 }).then(e=>{
                     if (e.ok) {
                         var n = e.json();
-                        return t.emitter.emit("save-success", n),
-                        n
+                        return t.emitter.emit("save-success", n), n;
                     }
                     throw new Error("could not post file: ".concat(e.status))
                 }
@@ -28752,6 +28843,7 @@ and limitations under the License.
 
     (Ki,tr);
     dr.emitter.on("save-success", t=>{
+        console.log("save-success: ", t);
         ur.triggerShare(t)
     }
     ),
@@ -28764,13 +28856,8 @@ and limitations under the License.
     }
     );
 
-    for(var i = 0;i < 8;i++)
-    {
-        var xCell = Math.floor(Math.random() * 8);
-        var yCell = Math.floor(Math.random() * 8);
-        var cell = {x:xCell, y:yCell};
-        rr.onAddNote(cell);
-    }
+    var infor = Ki;
+    console.log("infor: ", infor);
 
 
 }
