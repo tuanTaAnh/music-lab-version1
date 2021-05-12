@@ -11295,7 +11295,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }()
 }
 , function(t, e) {
-    t.exports = '<button class=button id=cancel><img src=static/images/icon-x.svg></button> <div class="expandable modal-content" id=settings-modal> <div class=expandable-inner> <div class="setting-column setting-column--left"> <div class=setting-group> <label for=bars>Length</label> <div class=quantity> <input id=bars type=number name=bars value=4 min=1 max=16 data-label=bars> </div> </div> <div class=setting-group> <label for=beats>Beats per bar</label> <div class=quantity> <input id=beats type=number name=beats value=2 min=2 max=7> </div> </div> <div class=setting-group> <label for=subdivision>Split beats into</label> <div class=quantity> <input id=subdivision type=number name=subdivision value=2 min=1 max=4> </div> </div> </div> <div class="setting-column setting-column--right"> <div class=setting-group> <label for=scale>Scale</label> <span class=select-wrap> <select id=scale name=scale> <option value=major>Major</option> <option value=pentatonic>Pentatonic</option> <option value=chromatic>Chromatic</option> </select> </span> </div> <div class=setting-group> <label for=rootPitch>Start on</label> <span class=select-wrap> <select id=rootPitch name=rootPitch> <option value=0 selected=selected>C</option> <option value=1>Câ™¯ / Dâ™­</option> <option value=2>D</option> <option value=3>Dâ™¯ / Eâ™­</option> <option value=4>E</option> <option value=5>F</option> <option value=6>Fâ™¯ / Gâ™­</option> <option value=7>G</option> <option value=8>Gâ™¯ / Aâ™­</option> <option value=9>A</option> <option value=10>Aâ™¯ / Bâ™­</option> <option value=11>B</option> </select> </span> <span class=select-wrap> <select name=rootOctave> <option value=3>Low</option> <option value=4 selected=selected>Middle</option> <option value=5>High</option> </select> </span> </div> <div class=setting-group> <label for=octaves>Range</label> <div class=quantity> <input id=octaves type=number name=octaves value=2 min=1 max=3 data-label=octave> </div> </div> </div> <button class="button big-button" id=submit> <svg viewBox="0 0 35 26" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink> <g id=Icons-/-Check-White transform="translate(-3, -7)" fill=#FFFFFF> <path d="M13.7827492,27.7056923 L6.19504261,20.1179857 C5.80549373,19.7284368 5.174255,19.7273215 4.78333206,20.1154915 L3.37877948,21.5101529 C2.98687769,21.8992948 2.98464037,22.5324558 3.37378229,22.9243576 C3.37461221,22.9251934 3.37544361,22.9260277 3.37627647,22.9268606 L13.0756424,32.6262266 C13.4661667,33.0167508 14.0993317,33.0167508 14.489856,32.6262266 L36.9384314,10.1776512 C37.3289557,9.78712686 37.3289557,9.15396188 36.9384314,8.76343759 L35.5484331,7.37410754 C35.1580393,6.98371368 34.5251319,6.9835642 34.1345537,7.37377361 L13.7827492,27.7056923 Z"></path> </g> </svg> </button> </div> </div> '
+    t.exports = '<button class=button id=cancel><img src=static/images/icon-x.svg></button> <div class="expandable modal-content" id=settings-modal> <div class=expandable-inner> <div class="setting-column setting-column--left"> <div class=setting-group> <label for=bars>Length</label> <div class=quantity> <input id=bars type=number name=bars value=4 min=1 max=16 data-label=bars> </div> </div> <div class=setting-group> <label for=beats>Beats per bar</label> <div class=quantity> <input id=beats type=number name=beats value=2 min=2 max=7> </div> </div> <div class=setting-group> <label for=subdivision>Split beats into</label> <div class=quantity> <input id=subdivision type=number name=subdivision value=2 min=1 max=4> </div> </div> <div class=setting-group> <label for=bars>Random Number</label> <div class=quantity> <input id=random type=number name=random value=16 min=8 max=32 data-label=bars> </div> </div></div> <div class="setting-column setting-column--right"> <div class=setting-group> <label for=scale>Scale</label> <span class=select-wrap> <select id=scale name=scale> <option value=major>Major</option> <option value=pentatonic>Pentatonic</option> <option value=chromatic>Chromatic</option> </select> </span> </div> <div class=setting-group> <label for=rootPitch>Start on</label> <span class=select-wrap> <select id=rootPitch name=rootPitch> <option value=0 selected=selected>C</option> <option value=1>Câ™¯ / Dâ™­</option> <option value=2>D</option> <option value=3>Dâ™¯ / Eâ™­</option> <option value=4>E</option> <option value=5>F</option> <option value=6>Fâ™¯ / Gâ™­</option> <option value=7>G</option> <option value=8>Gâ™¯ / Aâ™­</option> <option value=9>A</option> <option value=10>Aâ™¯ / Bâ™­</option> <option value=11>B</option> </select> </span> <span class=select-wrap> <select name=rootOctave> <option value=3>Low</option> <option value=4 selected=selected>Middle</option> <option value=5>High</option> </select> </span> </div> <div class=setting-group> <label for=octaves>Range</label> <div class=quantity> <input id=octaves type=number name=octaves value=2 min=1 max=3 data-label=octave> </div> </div><div class=setting-group> <label for=bars></label>  </div> </div> <button class="button big-button" id=submit> <svg viewBox="0 0 35 26" version=1.1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink> <g id=Icons-/-Check-White transform="translate(-3, -7)" fill=#FFFFFF> <path d="M13.7827492,27.7056923 L6.19504261,20.1179857 C5.80549373,19.7284368 5.174255,19.7273215 4.78333206,20.1154915 L3.37877948,21.5101529 C2.98687769,21.8992948 2.98464037,22.5324558 3.37378229,22.9243576 C3.37461221,22.9251934 3.37544361,22.9260277 3.37627647,22.9268606 L13.0756424,32.6262266 C13.4661667,33.0167508 14.0993317,33.0167508 14.489856,32.6262266 L36.9384314,10.1776512 C37.3289557,9.78712686 37.3289557,9.15396188 36.9384314,8.76343759 L35.5484331,7.37410754 C35.1580393,6.98371368 34.5251319,6.9835642 34.1345537,7.37377361 L13.7827492,27.7056923 Z"></path> </g> </svg> </button> </div> </div> '
 }
 , function(t, e) {
     t.exports = '<button class=button id=cancel><img src=static/images/icon-x.svg></button> <div class="expandable modal-content" id=about-modal> <div id=about-top> <div class=expandable-inner> <h3>Chrome Music Lab: <strong>Song Maker</strong></h3> <p>To make a song, add notes by clicking the grid. Then, share your song with a link. You can also use a MIDI keyboard or sing a note into your mic.</p> <p>You can also use your computer keys. Press the arrow keys to move, enter and backspace to add and remove notes, and spacebar to play.</p> <p>If youâ€™d like to share something with us, post it with #chromemusiclab or drop us a line at <a href=mailto:chromemusiclab-support@google.com>chromemusiclab-support@google.com</a>.</p> </div> </div> <div class=""> <div class="expandable-inner footnote"> Built by Google Creative Lab, Use All Five, and Yotam Mann. <div class=chrome-experiment> </div> </div> </div> </div> '
@@ -17917,6 +17917,7 @@ document.addEventListener('DOMContentLoaded', function () {
             this.scale = "major",
             this.percussionNotes = 2,
             this.rootNote = 48,
+            this.random = 8,
             this.instrument = "marimba",
             this.percussion = "electronic"
         }
@@ -17975,6 +17976,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 subdivision: this.subdivision,
                 octaves: this.octaves,
                 scale: this.scale,
+                random: this.random,
                 rootNote: this.rootNote,
                 rootPitch: this.rootPitch,
                 rootOctave: this.rootOctave,
@@ -25162,7 +25164,7 @@ and limitations under the License.
             this.track = e,
             console.log("Constructor");
             r || (this.track.on("add", t=>{
-                console.log("Constructor t: ", t);
+//                console.log("Constructor t: ", t);
                 this.addNoteVN(t);
             }),
             this.track.on("remove", t=>this.removeNote(t)),
@@ -27635,9 +27637,11 @@ and limitations under the License.
             }
             ,
             this.triggerSettingsModal = t=>{
+                console.log("triggerSettingsModal: ", t);
                 this.emit("stop"),
                 this.modals.startSong || ( this.modals.startSong = new Ci(t),
                     this.modals.startSong.on("options", t=>{
+                        console.log("t: ",t);
                         this.emit("settings-update", t)
                     }
                     ),
@@ -27955,7 +27959,7 @@ and limitations under the License.
                 resetP.bears = infor.beats;
                 resetP.bars = infor.bars;
                 console.log("resetP", typeof(resetP));
-                console.log("resetP", (resetP));
+                console.log("resetP", infor.random);
                 t.preventDefault(),
                 this.emit("stop"),
                 this.emit("restart"),
@@ -28665,6 +28669,7 @@ and limitations under the License.
     }
     ),
     hr.on("settings", ()=>{
+        console.log("Ki: ",Ki);
         ur.triggerSettingsModal(Ki)
     }
     ),
@@ -28675,14 +28680,16 @@ and limitations under the License.
         console.log("infor beats: ", infor.beats);
         var num_of_bars = infor.bars;
         var beat_per_bar = infor.beats;
+        var random = infor.random;
         var length_of_beats = 2*num_of_bars*beat_per_bar;
         var bar_array = new Array(length_of_beats);
         console.log("length_of_beats: ", length_of_beats);
+        var count = 0;
         for(var i = 0;i < length_of_beats;i++)
         {
             bar_array[i] = 0;
         }
-        for(var i = 0;i < length_of_beats;i++)
+        for(var i = 0;i < random;i++)
         {
 //            console.log("i: ",i);
             var xCell = Math.floor(Math.random() * length_of_beats);
@@ -28691,6 +28698,7 @@ and limitations under the License.
 //            console.log("bar_array[xCell]: ", bar_array[xCell]);
             if(bar_array[xCell] == 0)
             {
+                count++;
                 var cell = {x:xCell, y:yCell};
                 rr.onAddNote(cell);
 //                console.log("YES");
