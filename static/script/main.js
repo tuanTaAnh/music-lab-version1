@@ -28689,7 +28689,7 @@ and limitations under the License.
         {
             bar_array[i] = 0;
         }
-        while(count < random && count < length_of_beats)
+        while(count < random || count < length_of_beats)
         {
         //            console.log("i: ",i);
             var xCell = Math.floor(Math.random() * length_of_beats);
